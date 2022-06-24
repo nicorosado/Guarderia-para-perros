@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #EFE4C2;
+    color: #357299;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color:#357299;  
+}
+a:visited{
+    color: #357299;
+}
+a:hover{
+    background-color: #357299;
+    color: white;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: white;
+    padding-left: 0;
+}
+
+.main{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px ;
+}
+.nav-item-link {
+    display: block;
+    padding: 12px 24px;
+}
+
+.bienvenida{
+    display: grid;
+    grid-template-areas: "texto imagen";
+    gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #3f7698;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.bottom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.panel-left{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: space-around;
+    align-items: center;
+}    
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+/*     display: flex;
+    justify-content: space-around; */
+}
+
+.panel-left span{
+    font-size: 30px;
+}
+hr{
+    border:3px white solid;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.logo-m{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.panel-right{
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    width: 430px;
+    border-radius: 20px;
+}    
+.panel-left a{
+    font-size: 20px;
+    align-self: flex-start;
+    text-decoration: underline;
+    margin-left: 15px;
+    color: white;
+}
+
+.title{
+    display: flex;
+    /* margin-left: 140px; */
+}
+.image-grooming{
+    margin-left: 50px;
+    width: 430px;
+    border-radius: 20px;
+    border: solid #3f7698 4px;    
+}
+
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #000;
+  }
+  
+textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+.button {
+    padding-left: 90px;
+  }
+  
+button {
+    margin-left: .5em;
+  }
+  
+.sobrenos{
+      background-color: white;
+      color: #357299;
+  }
+
+/* .vacaciones{
+      flex-direction: column;
+      margin-left: auto;
+     } */
+
+/* .fotodog{
+    display: flex;
+    justify-content: center;
+}
+
+section .fotodog img{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+} */
+
+.vacaciones {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"
+                         "texto texto"
+                         "texto texto"
+                         "imagen imagen";
+    width: 100%;
+    /* justify-content: space-between; */
+    text-align: center;
+    background-color: #3f7698;
+    border-radius: 20px;
+    color: white;
+}
+
+.grid-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+
+@media screen and (max-width: 480px) {
+    .bienvenida {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+    gap: 0px;
+    }
+    .panel-left {
+        display: grid;
+        grid-row: 2/2;
+    }
+   .panel-right {
+    align-items: center;
+    margin-top: 10px;
+    grid-row: 1/2;
+   }
+   header {
+    justify-content: center;
+    margin-left: 0px;
+   }
+   .header__nav {
+    margin-left: 30px;
+   }
+   .dog1 {
+    display: none;
+   }
+   .dog2 {
+    display: none;
+   }
+   .grid-img {
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+    
+}
