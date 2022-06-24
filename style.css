@@ -213,6 +213,50 @@ section .fotodog img{
     gap: 2px;
 }
 
+/* Le coloco animaciones al link de contacto */
+.anim-index { 
+    transition: .2s linear;
+
+}
+
+.anim-index:hover {
+    margin-right: 17px;
+    text-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 40px white;
+
+
+}
+
+/* le coloco animaciones al h2 de Vacaciones */
+
+.anim-vacas {
+    animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-25% -25%);
+    }
+
+    50% {
+        text-shadow: 10px 10px 10px white;
+    }
+
+    100% {
+        transform: (25% 25%);
+    }
+}
+
+.logo-m:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+
+/* le coloco una rotacion al nombre de la guarderia cuando le pasas el mouse por encima */
+
+/* Inicio media queries */
+
 @media screen and (max-width: 480px) {
     .bienvenida {
     display: grid;
