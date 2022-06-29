@@ -46,6 +46,7 @@ header{
 .bienvenida{
     display: grid;
     grid-template-areas: "texto imagen";
+    grid-template-columns: 50% 50%;
     gap: 50px;
     width: 100%;
     justify-content: space-between;
@@ -53,6 +54,7 @@ header{
     background-color: #3f7698;
     border-radius: 20px;
     color: white;
+    overflow: hidden;
 
 }
 
@@ -296,5 +298,13 @@ section .fotodog img{
 }
 
 .form {
-    width: 30%;
+    width: 40%;
+}
+
+.img-car {
+    padding-right: 0;
+}
+
+#exampleFormControlTextarea1 {
+    height: 150px;
 }
