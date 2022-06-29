@@ -80,6 +80,7 @@ footer{
 
 .panel-left span{
     font-size: 30px;
+    width: 100%;
 }
 hr{
     border:3px white solid;
@@ -172,10 +173,10 @@ button {
     margin-left: .5em;
   }
   
-.sobrenos{
+/* .sobrenos{
       background-color: white;
       color: #357299;
-  }
+  } */
 
 /* .vacaciones{
       flex-direction: column;
@@ -216,6 +217,7 @@ section .fotodog img{
 /* Le coloco animaciones al link de contacto */
 .anim-index { 
     transition: .2s linear;
+    
 
 }
 
