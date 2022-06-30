@@ -262,11 +262,22 @@ section .fotodog img{
 /* Inicio media queries */
 
 @media screen and (max-width: 480px) {
-    .bien {
+    .bienvenida {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    /* .bienvenida {
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
     gap: 0px;
+    } */
+    .panel-left span{
+        font-size: 50px;
+    }
+    .panel-left span a {
+        font-size: 50px;
     }
     .panel-left {
         display: grid;
