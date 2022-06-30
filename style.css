@@ -262,10 +262,10 @@ section .fotodog img{
 /* Inicio media queries */
 
 @media screen and (max-width: 480px) {
-    .bienvenida {
+    .bien {
     display: grid;
     grid-template-columns: 1fr;
-    align-self: center;
+    align-content: center;
     gap: 0px;
     }
     .panel-left {
