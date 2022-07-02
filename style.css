@@ -44,12 +44,11 @@ header{
 }
 
 .bienvenida{
-    display: grid;
+/*  display: grid;
     grid-template-areas: "texto imagen";
     grid-template-columns: 50% 50%;
     gap: 50px;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: space-between; */
     text-align: center;
     background-color: #3f7698;
     border-radius: 20px;
@@ -64,12 +63,11 @@ header{
 
 }
 .panel-left{
-    margin: 30px;
     display: flex;
     flex-direction: column;
-    font-size: 25px;
     justify-content: space-around;
     align-items: center;
+    font-size: 25px;
 }    
 
 footer{
@@ -91,6 +89,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 1rem;
     
 }
 .logo-m{
@@ -261,10 +260,17 @@ section .fotodog img{
 
 /* Inicio media queries */
 
-@media screen and (max-width: 480px) {
+@media screen  and (max-width: 992px) {
+    .panel-left span{
+        font-size: 25px;
+    }   
+}
+
+@media screen and (max-width: 576px) {
     .bienvenida {
         display: flex;
         flex-direction: column-reverse;
+        margin: 0 10%;
     }
     
     /* .bienvenida {
@@ -274,14 +280,16 @@ section .fotodog img{
     gap: 0px;
     } */
     .panel-left span{
-        font-size: 50px;
+        font-size: 40px;
     }
     .panel-left span a {
-        font-size: 50px;
+        font-size: 40px;
     }
     .panel-left {
         display: grid;
         grid-row: 2/2;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
    .panel-right {
     align-items: center;
@@ -314,6 +322,7 @@ section .fotodog img{
 
 .img-car {
     padding-right: 0;
+    padding-left: 0;
 }
 
 #exampleFormControlTextarea1 {
