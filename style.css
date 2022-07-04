@@ -285,25 +285,25 @@ section .fotodog img{
         margin-bottom: 10px;
     }
    .panel-right {
-    align-items: center;
-    margin-top: 10px;
-    grid-row: 1/2;
+        align-items: center;
+        margin-top: 10px;
+        grid-row: 1/2;
    }
    header {
-    justify-content: center;
-    margin-left: 0px;
-    margin-top: 0px;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 0px;
    }
    .header__nav {
-    font-size: 12px;
+        font-size: 12px;
    }
    
    .logo {
-    display: inline-block;
+        display: inline-block;
    }
    .image-grooming {
-    width: 100%;
-    margin: 0;
+        width: 100%;
+         margin: 0;
    }
 }
 
