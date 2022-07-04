@@ -301,6 +301,10 @@ section .fotodog img{
    .logo {
     display: inline-block;
    }
+   .image-grooming {
+    width: 100%;
+    margin: 0;
+   }
 }
 
 .form {
