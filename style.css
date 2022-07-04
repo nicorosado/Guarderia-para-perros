@@ -1,4 +1,11 @@
+.main{
+    width: 60%;
+    margin: 0% auto;
+}
+
 body{
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
     background-color: #EFE4C2;
@@ -28,10 +35,6 @@ a:hover{
     padding-left: 0;
 }
 
-.main{
-    width: 60rem;
-    margin: 0 auto;
-}
 header{
     display: flex;
     align-items: center;
@@ -209,13 +212,54 @@ section .fotodog img{
 
 /* Inicio media queries */
 
+@media screen  and (max-width: 1250px) {
+    .nav-item-link {
+        padding: 12px 8px;
+    }
+    .main {
+        width: 80%;
+    }    
+    .panel-left span{
+        font-size: 25px;
+    }   
+}
+
 @media screen  and (max-width: 992px) {
+    .dog1 {
+        display: none;
+       }
+       .dog2 {
+        display: none;
+       }
+       .grid-img {
+        display: grid;
+        grid-template-columns: 1fr;
+       }
+    .main {
+        width: 100%;
+    }
     .panel-left span{
         font-size: 25px;
     }   
 }
 
 @media screen and (max-width: 576px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .encuentra {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-item-link {
+        padding: 12px 8px;
+    }    
     .bienvenida {
         display: flex;
         flex-direction: column-reverse;
@@ -229,10 +273,10 @@ section .fotodog img{
     gap: 0px;
     } */
     .panel-left span{
-        font-size: 40px;
+        font-size: 20px;
     }
     .panel-left span a {
-        font-size: 40px;
+        font-size: 20px;
     }
     .panel-left {
         display: grid;
@@ -248,21 +292,15 @@ section .fotodog img{
    header {
     justify-content: center;
     margin-left: 0px;
+    margin-top: 0px;
    }
    .header__nav {
-    margin-left: 30px;
+    font-size: 12px;
    }
-   .dog1 {
-    display: none;
+   
+   .logo {
+    display: inline-block;
    }
-   .dog2 {
-    display: none;
-   }
-   .grid-img {
-    display: grid;
-    grid-template-columns: 1fr;
-   }
-    
 }
 
 .form {
