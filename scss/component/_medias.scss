@@ -39,53 +39,43 @@
     .encuentra {
         display: none;
     }
-    header {
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-item-link {
-        padding: 12px 8px;
-    }    
     .bienvenida {
         display: flex;
         flex-direction: column-reverse;
         margin: 0 10%;
-    }
-    
-    /* .bienvenida {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-    gap: 0px;
-    } */
-    .panel-left span{
-        font-size: 20px;
-    }
-    .panel-left span a {
-        font-size: 20px;
-    }
-    .panel-left {
-        display: grid;
-        grid-row: 2/2;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-   .panel-right {
-        align-items: center;
-        margin-top: 10px;
-        grid-row: 1/2;
-   }
+
+        & .panel-left {
+            display: grid;
+            grid-row: 2/2;
+            margin-top: 30px;
+            margin-bottom: 10px;
+
+            & span{
+                font-size: 20px;
+
+                & a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }    
    header {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         margin-left: 0px;
         margin-top: 0px;
+
+        & .logo {
+            display: inline-block;
+       }
    }
    .header__nav {
         font-size: 12px;
-   }
-   
-   .logo {
-        display: inline-block;
+
+        & .nav-item-link {
+            padding: 12px 8px;
+        }    
    }
    .image-grooming {
         width: 100%;

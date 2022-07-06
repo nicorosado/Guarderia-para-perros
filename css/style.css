@@ -1,73 +1,3 @@
-.main {
-  width: 60%;
-  margin: 0% auto;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: #EFE4C2;
-  color: #357299;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-}
-
-a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #357299;
-}
-
-a:visited {
-  color: #357299;
-}
-
-a:hover {
-  background-color: #357299;
-  color: white;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  /*     display: flex;
-      justify-content: space-around; */
-}
-
-hr {
-  border: 3px white solid;
-}
-
-.image-grooming {
-  margin-left: 50px;
-  border-radius: 20px;
-}
-
-@keyframes move {
-  0% {
-    transform: translate(-25% -25%);
-  }
-  50% {
-    text-shadow: 10px 10px 10px white;
-  }
-  100% {
-    transform: 25% 25%;
-  }
-}
-/* le coloco una rotacion al nombre de la guarderia cuando le pasas el mouse por encima */
-/* Inicio media queries */
-.form {
-  width: 40%;
-}
-
-#exampleFormControlTextarea1 {
-  height: 150px;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -209,56 +139,113 @@ header .logo :hover {
   .encuentra {
     display: none;
   }
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-item-link {
-    padding: 12px 8px;
-  }
   .bienvenida {
     display: flex;
     flex-direction: column-reverse;
     margin: 0 10%;
   }
-  /* .bienvenida {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: center;
-  gap: 0px;
-  } */
-  .panel-left span {
-    font-size: 20px;
-  }
-  .panel-left span a {
-    font-size: 20px;
-  }
-  .panel-left {
+  .bienvenida .panel-left {
     display: grid;
     grid-row: 2/2;
     margin-top: 30px;
     margin-bottom: 10px;
   }
-  .panel-right {
-    align-items: center;
-    margin-top: 10px;
-    grid-row: 1/2;
+  .bienvenida .panel-left span {
+    font-size: 20px;
+  }
+  .bienvenida .panel-left span a {
+    font-size: 20px;
   }
   header {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-left: 0px;
     margin-top: 0px;
   }
+  header .logo {
+    display: inline-block;
+  }
   .header__nav {
     font-size: 12px;
   }
-  .logo {
-    display: inline-block;
+  .header__nav .nav-item-link {
+    padding: 12px 8px;
   }
   .image-grooming {
     width: 100%;
     margin: 0;
   }
+}
+.main {
+  width: 60%;
+  margin: 0% auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #EFE4C2;
+  color: #357299;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #357299;
+}
+
+a:visited {
+  color: #357299;
+}
+
+a:hover {
+  background-color: #357299;
+  color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  /*     display: flex;
+      justify-content: space-around; */
+}
+
+hr {
+  border: 3px white solid;
+}
+
+.image-grooming {
+  margin-left: 50px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-25% -25%);
+  }
+  50% {
+    text-shadow: 10px 10px 10px white;
+  }
+  100% {
+    transform: 25% 25%;
+  }
+}
+/* le coloco una rotacion al nombre de la guarderia cuando le pasas el mouse por encima */
+/* Inicio media queries */
+.form {
+  width: 40%;
+}
+
+#exampleFormControlTextarea1 {
+  height: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
