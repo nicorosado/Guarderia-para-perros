@@ -1,0 +1,94 @@
+@media screen  and (max-width: 1250px) {
+    .nav-item-link {
+        padding: 12px 8px;
+    }
+    .main {
+        width: 80%;
+    }    
+    .panel-left span{
+        font-size: 25px;
+    }   
+}
+
+@media screen  and (max-width: 992px) {
+    .dog1 {
+        display: none;
+       }
+       .dog2 {
+        display: none;
+       }
+       .grid-img {
+        display: grid;
+        grid-template-columns: 1fr;
+       }
+    .main {
+        width: 100%;
+    }
+    .panel-left span{
+        font-size: 25px;
+    }   
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .encuentra {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-item-link {
+        padding: 12px 8px;
+    }    
+    .bienvenida {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 10%;
+    }
+    
+    /* .bienvenida {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 0px;
+    } */
+    .panel-left span{
+        font-size: 20px;
+    }
+    .panel-left span a {
+        font-size: 20px;
+    }
+    .panel-left {
+        display: grid;
+        grid-row: 2/2;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+   .panel-right {
+        align-items: center;
+        margin-top: 10px;
+        grid-row: 1/2;
+   }
+   header {
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 0px;
+   }
+   .header__nav {
+        font-size: 12px;
+   }
+   
+   .logo {
+        display: inline-block;
+   }
+   .image-grooming {
+        width: 100%;
+         margin: 0;
+   }
+}

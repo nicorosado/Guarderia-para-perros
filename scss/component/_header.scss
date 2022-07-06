@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+    
+    & .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 1rem;
+       
+        & .logo-m{
+            font-size: 20px;
+            margin-left: 5px;
+        }
+        
+        & :hover {
+            transform: rotate(360deg);
+            transition-duration: 1s;
+        }
+        
+    }
+}
+
+.header__nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: white;
+    padding-left: 0;
+
+    & .nav-item-link {
+        display: block;
+        padding: 12px 24px;
+    }
+    
+}

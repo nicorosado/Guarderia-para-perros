@@ -1,0 +1,23 @@
+.vacaciones {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"
+                         "texto texto"
+                         "texto texto"
+                         "imagen imagen";
+    width: 100%;
+    /* justify-content: space-between; */
+    text-align: center;
+    background-color: #3f7698;
+    border-radius: 20px;
+    color: white;
+
+    & .anim-vacas {
+        animation: move 3s ease-in-out infinite;
+    }
+
+    & .grid-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+    }
+}
