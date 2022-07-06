@@ -1,10 +1,10 @@
 @media screen  and (max-width: 1250px) {
-    .nav-item-link {
-        padding: 12px 8px;
-    }
     .main {
         width: 80%;
     }    
+    .nav-item-link {
+        padding: 12px 8px;
+    }
     .panel-left span{
         font-size: 25px;
     }   
@@ -33,8 +33,8 @@
     footer {
         display: flex;
         justify-content: space-between;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .encuentra {
         display: none;
