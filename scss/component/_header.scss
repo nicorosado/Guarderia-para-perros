@@ -15,7 +15,7 @@ header{
             margin-left: 5px;
         }
         
-        & :hover {
+        &:hover {
             transform: rotate(360deg);
             transition-duration: 1s;
         }
