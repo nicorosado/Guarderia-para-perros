@@ -1,80 +1,8 @@
 @import "./variables";
+@import "./component/base";
 @import "./component/header";
 @import "./component/bienvenida";
 @import "./component/sobrenos";
 @import "./component/vacaciones";
 @import "./component/medias";
-
-.main{
-    width: 60%;
-    margin: 0% auto;
-}
-
-body{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: $main-color;
-    color: $secondary-color;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-a{
-    text-decoration: none;
-    font-weight: 600;
-    color:$secondary-color;  
-}
-a:visited{
-    color: $secondary-color;
-}
-a:hover{
-    background-color: $secondary-color;
-    color: white;
-}
-
-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: auto;
-/*     display: flex;
-    justify-content: space-around; */
-}
-
-hr{
-    border:3px white solid;
-}
-.image-grooming{
-    margin-left: 50px;
-    border-radius: 20px;
-    width: 100%;   
-}
-
-@keyframes move {
-    0% {
-        transform: translate(-25% -25%);
-    }
-
-    50% {
-        text-shadow: 10px 10px 10px white;
-    }
-
-    100% {
-        transform: (25% 25%);
-    }
-}
-
-/* le coloco una rotacion al nombre de la guarderia cuando le pasas el mouse por encima */
-
-/* Inicio media queries */
-
-
-.form {
-    width: 40%;
-}
-
-#exampleFormControlTextarea1 {
-    height: 150px;
-}
 

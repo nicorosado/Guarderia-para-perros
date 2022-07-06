@@ -29,6 +29,17 @@
     }   
 }
 
+@media screen and (max-width:750px) {
+    .dog3 {
+        display: none;
+    }
+    .vacaciones {
+        & .grid-img {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }   
+}
 @media screen and (max-width: 576px) {
     footer {
         display: flex;
