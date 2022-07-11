@@ -1,11 +1,19 @@
+.title, .header__nav, header, body {
+  display: flex;
+  justify-content: center;
+}
+
+.vacaciones, .bienvenida {
+  text-align: center;
+  border-radius: 20px;
+}
+
 .main {
   width: 60%;
   margin: 0% auto;
 }
 
 body {
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
   background-color: #EFE4C2;
@@ -51,12 +59,14 @@ hr {
 @keyframes move {
   0% {
     transform: translate(-25% -25%);
+    /* transform: translate(-25% -25%); */
   }
   50% {
     text-shadow: 10px 10px 10px white;
   }
   100% {
-    transform: 25% 25%;
+    transform: translate(25% 25%);
+    /* transform: translate(25% 25%); */
   }
 }
 /* le coloco una rotacion al nombre de la guarderia cuando le pasas el mouse por encima */
@@ -70,8 +80,6 @@ hr {
 }
 
 header {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 48px;
 }
@@ -87,12 +95,11 @@ header .logo .logo-m {
 }
 header .logo:hover {
   transform: rotate(360deg);
+  /* transform: rotate(360deg); */
   transition-duration: 1s;
 }
 
 .header__nav {
-  display: flex;
-  justify-content: center;
   list-style: none;
   background-color: white;
   padding-left: 0;
@@ -103,9 +110,7 @@ header .logo:hover {
 }
 
 .bienvenida {
-  text-align: center;
-  background-color: #3f7698;
-  border-radius: 20px;
+  background-color: #357299;
   color: white;
   overflow: hidden;
 }
@@ -135,11 +140,6 @@ header .logo:hover {
   color: white;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-}
-
 .img-car {
   padding-right: 0;
   padding-left: 0;
@@ -156,10 +156,7 @@ header .logo:hover {
   display: grid;
   grid-template-areas: "titulo titulo titulo" "texto texto" "texto texto" "imagen imagen";
   width: 100%;
-  /* justify-content: space-between; */
-  text-align: center;
-  background-color: #3f7698;
-  border-radius: 20px;
+  background-color: #357299;
   color: white;
 }
 .vacaciones .anim-vacas {

@@ -1,6 +1,5 @@
 header{
-    display: flex;
-    align-items: center;
+    @extend %flex-center;
     justify-content: space-between;
     margin-top: 48px;
     
@@ -16,7 +15,8 @@ header{
         }
         
         &:hover {
-            transform: rotate(360deg);
+            @include anim-logo (rotate(360deg));
+            /* transform: rotate(360deg); */
             transition-duration: 1s;
         }
         
@@ -24,10 +24,9 @@ header{
 }
 
 .header__nav{
-    display: flex;
-    justify-content: center;
+    @extend %flex-center;
     list-style: none;
-    background-color: white;
+    background-color: map-get($paleta, blanco);
     padding-left: 0;
 
     & .nav-item-link {

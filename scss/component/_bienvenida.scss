@@ -1,8 +1,7 @@
 .bienvenida{
-    text-align: center;
-    background-color: #3f7698;
-    border-radius: 20px;
-    color: white;
+    @extend %align-center;
+    background-color: map-get($paleta, secundario);
+    color: map-get($paleta, blanco);
     overflow: hidden;
 
     & .panel-left{
@@ -34,14 +33,13 @@
             align-self: flex-start;
             text-decoration: underline;
             margin-left: 15px;
-            color: white;
+            color: map-get($paleta, blanco);
         }
     }    
 
 }
 .title{
-    display: flex;
-    justify-content: center;
+    @extend %flex-center;
 }
 .img-car {
     padding-right: 0;

@@ -1,15 +1,14 @@
 .main{
-    width: 60%;
+    @include ancho(60%);
     margin: 0% auto;
 }
 
 body{
-    display: flex;
-    justify-content: center;
+    @extend %flex-center;
     margin: 0;
     padding: 0;
-    background-color: $main-color;
-    color: $secondary-color;
+    background-color: map-get($paleta, primario);
+    color: map-get($paleta, secundario);
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -17,14 +16,14 @@ body{
 a{
     text-decoration: none;
     font-weight: 600;
-    color:$secondary-color;  
+    color: map-get($paleta, secundario);  
 }
 a:visited{
-    color: $secondary-color;
+    color: map-get($paleta, secundario);
 }
 a:hover{
-    background-color: $secondary-color;
-    color: white;
+    background-color: map-get($paleta, secundario);
+    color: map-get($paleta, blanco);
 }
 
 footer{
@@ -46,7 +45,8 @@ hr{
 
 @keyframes move {
     0% {
-        transform: translate(-25% -25%);
+        @include anim-logo (translate(-25% -25%));
+        /* transform: translate(-25% -25%); */
     }
 
     50% {
@@ -54,7 +54,8 @@ hr{
     }
 
     100% {
-        transform: (25% 25%);
+        @include anim-logo (translate(25% 25%));
+        /* transform: translate(25% 25%); */
     }
 }
 

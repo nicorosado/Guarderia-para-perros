@@ -5,10 +5,8 @@
                          "texto texto"
                          "imagen imagen";
     width: 100%;
-    /* justify-content: space-between; */
-    text-align: center;
-    background-color: #3f7698;
-    border-radius: 20px;
+    @extend %align-center;
+    background-color: map-get($paleta, secundario);
     color: white;
 
     & .anim-vacas {

@@ -1,6 +1,6 @@
 @media screen  and (max-width: 1250px) {
     .main {
-        width: 80%;
+        @include ancho(80%);
     }    
     .nav-item-link {
         padding: 12px 8px;
@@ -22,7 +22,7 @@
         grid-template-columns: 1fr;
        }
     .main {
-        width: 100%;
+        @include ancho(100%);
     }
     .panel-left span{
         font-size: 25px;
@@ -89,7 +89,7 @@
         }    
    }
    .image-grooming {
-        width: 100%;
+        @include ancho(100%);
          margin: 0;
    }
 }

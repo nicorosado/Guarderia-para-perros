@@ -1,0 +1,7 @@
+@mixin ancho($ancho) {
+    width: $ancho;
+}
+
+@mixin anim-logo($propiedad) {
+    transform: $propiedad;
+}
