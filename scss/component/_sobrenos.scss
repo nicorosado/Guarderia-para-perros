@@ -1,0 +1,6 @@
+.sobrenos{
+    display: grid;
+    grid-template-areas: "texto imagen";
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+  }

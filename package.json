@@ -1,0 +1,23 @@
+{
+  "name": "animaciones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicorosado/Guarderia-para-perros.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicorosado/Guarderia-para-perros/issues"
+  },
+  "homepage": "https://github.com/nicorosado/Guarderia-para-perros#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
