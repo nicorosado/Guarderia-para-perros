@@ -26,7 +26,15 @@
     }
     .panel-left span{
         font-size: 25px;
-    }   
+    } 
+    .form {
+        padding-left: 50px;
+        width: 60%;
+    }
+    /* .navbar {
+    padding-top: 50px;
+    padding-right: 50px;
+    } */  
 }
 
 @media screen and (max-width:810px) {
@@ -38,7 +46,11 @@
             display: grid;
             grid-template-columns: 1fr;
         }
-    }   
+    }
+    .form {
+        padding-left: 50px;
+        width: 70%;
+       }   
 }
 @media screen and (max-width: 576px) {
     footer {
@@ -91,5 +103,9 @@
    .image-grooming {
         @include ancho(100%);
          margin: 0;
+   }
+   .form {
+    padding-left: 50px;
+    width: 70%;
    }
 }
