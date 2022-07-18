@@ -16,7 +16,6 @@ header{
         
         &:hover {
             @include anim-logo (rotate(360deg));
-            /* transform: rotate(360deg); */
             transition-duration: 1s;
         }
         
@@ -30,8 +29,8 @@ header{
     padding-left: 0;
 
     & .nav-item-link {
-        display: block;
-        padding: 12px 24px;
+        display: inline-block;
+        padding: 12px 12px;
     }
     
     

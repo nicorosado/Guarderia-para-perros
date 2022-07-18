@@ -46,9 +46,13 @@
     .form {
         padding-left: 50px;
         width: 70%;
-       }     
+    }
+    .nav-item-link {
+        padding: 5px 5px;
+    }
+
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 615px) {
     footer {
         display: flex;
         justify-content: space-between;
@@ -103,5 +107,9 @@
    .form {
     padding-left: 50px;
     width: 70%;
+   }
+   #dog4 {
+    height: 300px;
+    width:  300px;
    }
 }

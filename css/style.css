@@ -95,7 +95,6 @@ header .logo .logo-m {
 }
 header .logo:hover {
   transform: rotate(360deg);
-  /* transform: rotate(360deg); */
   transition-duration: 1s;
 }
 
@@ -105,8 +104,8 @@ header .logo:hover {
   padding-left: 0;
 }
 .header__nav .nav-item-link {
-  display: block;
-  padding: 12px 24px;
+  display: inline-block;
+  padding: 12px 12px;
 }
 
 .bienvenida {
@@ -213,8 +212,11 @@ header .logo:hover {
     padding-left: 50px;
     width: 70%;
   }
+  .nav-item-link {
+    padding: 5px 5px;
+  }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 615px) {
   footer {
     display: flex;
     justify-content: space-between;
@@ -264,6 +266,10 @@ header .logo:hover {
   .form {
     padding-left: 50px;
     width: 70%;
+  }
+  #dog4 {
+    height: 300px;
+    width: 300px;
   }
 }
 
