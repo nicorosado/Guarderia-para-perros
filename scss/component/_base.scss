@@ -25,13 +25,10 @@ a:hover{
     background-color: map-get($paleta, secundario);
     color: map-get($paleta, blanco);
 }
-
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: auto;
-/*     display: flex;
-    justify-content: space-around; */
 }
 
 hr{
@@ -46,7 +43,7 @@ hr{
 @keyframes move {
     0% {
         @include anim-logo (translate(-25% -25%));
-        /* transform: translate(-25% -25%); */
+        
     }
 
     50% {
@@ -55,7 +52,7 @@ hr{
 
     100% {
         @include anim-logo (translate(25% 25%));
-        /* transform: translate(25% 25%); */
+        
     }
 }
 

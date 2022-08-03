@@ -17,5 +17,18 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2px;
+        
+        & .dog1:hover {
+            @extend %anim-dog;
+        }
+        & .dog2:hover {
+            @extend %anim-dog;
+        }
+        & .dog3:hover {
+            @extend %anim-dog;
+        }
+        & #dog4:hover {
+            @extend %anim-dog;
+        }
     }
 }
