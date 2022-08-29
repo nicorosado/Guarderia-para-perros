@@ -1,0 +1,34 @@
+.vacaciones {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo"
+                         "texto texto"
+                         "texto texto"
+                         "imagen imagen";
+    width: 100%;
+    @extend %align-center;
+    background-color: map-get($paleta, secundario);
+    color: white;
+
+    & .anim-vacas {
+        animation: move 3s ease-in-out infinite;
+    }
+
+    & .grid-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        
+        & .dog1:hover {
+            @extend %anim-dog;
+        }
+        & .dog2:hover {
+            @extend %anim-dog;
+        }
+        & .dog3:hover {
+            @extend %anim-dog;
+        }
+        & #dog4:hover {
+            @extend %anim-dog;
+        }
+    }
+}

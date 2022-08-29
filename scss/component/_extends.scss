@@ -1,0 +1,17 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+%align-center {
+    text-align: center;
+    border-radius: 20px;
+}
+
+%anim-dog {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}

@@ -1,0 +1,47 @@
+.bienvenida{
+    @extend %align-center;
+    background-color: map-get($paleta, secundario);
+    color: map-get($paleta, blanco);
+    overflow: hidden;
+
+    & .panel-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 25px;
+
+        & .anim-index { 
+            transition: .2s linear;
+            
+            &:hover {
+                margin-right: 17px;
+                text-shadow: 0 0 10px white,
+                0 0 20px white,
+                0 0 40px white;
+            }
+        
+        }
+
+        & span{
+            font-size: 30px;
+            width: 100%;
+        }
+
+        & a{
+            font-size: 20px;
+            align-self: flex-start;
+            text-decoration: underline;
+            margin-left: 15px;
+            color: map-get($paleta, blanco);
+        }
+    }    
+
+}
+.title{
+    @extend %flex-center;
+}
+.img-car {
+    padding-right: 0;
+    padding-left: 0;
+}

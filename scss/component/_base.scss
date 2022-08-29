@@ -1,0 +1,71 @@
+.main{
+    @include ancho(60%);
+    margin: 0% auto;
+}
+
+body{
+    @extend %flex-center;
+    margin: 0;
+    padding: 0;
+    background-color: map-get($paleta, primario);
+    color: map-get($paleta, secundario);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: map-get($paleta, secundario);  
+}
+a:visited{
+    color: map-get($paleta, secundario);
+}
+a:hover{
+    background-color: map-get($paleta, secundario);
+    color: map-get($paleta, blanco);
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+}
+
+hr{
+    border:3px white solid;
+}
+.image-grooming{
+    margin-left: 50px;
+    border-radius: 20px;
+    width: 100%;   
+}
+
+@keyframes move {
+    0% {
+        @include anim-logo (translate(-25% -25%));
+        
+    }
+
+    50% {
+        text-shadow: 10px 10px 10px white;
+    }
+
+    100% {
+        @include anim-logo (translate(25% 25%));
+        
+    }
+}
+
+/* le coloco una rotacion al nombre de la guarderia cuando le pasas el mouse por encima */
+
+/* Inicio media queries */
+
+
+.form {
+    width: 50%;
+}
+
+#exampleFormControlTextarea1 {
+    height: 150px;
+}
+

@@ -1,0 +1,115 @@
+@media screen  and (max-width: 1315px) {
+    .main {
+        @include ancho(80%);
+    }    
+    .nav-item-link {
+        padding: 12px 8px;
+    }
+    .panel-left span{
+        font-size: 25px;
+    }   
+}
+
+@media screen  and (max-width: 992px) {
+    .dog1 {
+        display: none;
+       }
+    .dog2 {
+        display: none;
+       }
+    .grid-img {
+        display: grid;
+        grid-template-columns: 1fr;
+       }
+    .main {
+        @include ancho(100%);
+    }
+    .panel-left span{
+        font-size: 25px;
+    } 
+    .form {
+        padding-left: 50px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .dog3 {
+        display: none;
+    }
+    .vacaciones {
+        & .grid-img {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    .form {
+        padding-left: 50px;
+        width: 70%;
+    }
+    .nav-item-link {
+        padding: 5px 5px;
+    }
+
+}
+@media screen and (max-width: 615px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .encuentra {
+        display: none;
+    }
+    .bienvenida {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 10%;
+
+        & .panel-left {
+            display: grid;
+            grid-row: 2/2;
+            margin-top: 30px;
+            margin-bottom: 10px;
+
+            & span{
+                font-size: 20px;
+
+                & a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }    
+   header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 0px;
+
+        & .logo {
+            display: inline-block;
+       }
+   }
+   .header__nav {
+        font-size: 12px;
+
+        & .nav-item-link {
+            padding: 12px 8px;
+        }    
+   }
+   .image-grooming {
+        @include ancho(100%);
+         margin: 0;
+   }
+   .form {
+    padding-left: 50px;
+    width: 70%;
+   }
+   #dog4 {
+    height: 300px;
+    width:  300px;
+   }
+}
