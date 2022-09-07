@@ -19,7 +19,7 @@ function Producto(id, nombre, precio){
  let stock = prompt("ingrese el producto que desea comprar para chequear stock");
  
 const existe = productos.filter(item => item.nombre === stock);
-console.log(existe); /* funcion que devuelve el objeto que se busca */
+console.log(existe); /* funcion que devuelve el objeto del producto que se busca */
 const precioTotal = productos.reduce((acumulador, item) => acumulador + item.precio, 0);
 console.log(precioTotal);  /* funcion que me devuelve el precio total de los productos que se venden */
 
